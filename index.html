@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZETRUTO - Crypto Trading Insights</title>
+    <style>
+       
+        body, html {
+            margin-left: 2000;
+            padding: 10;
+        }
+
+        .name{
+            color: purple;
+            font-size: 40px;
+            margin-top: 0px;
+            padding: 0px;
+            margin-left: 20px;
+            position: absolute;
+        }
+
+
+        .user_name{
+            bottom: 0px;
+            left: 0px;
+        }
+
+        
+        .side-pane {
+            margin-top: 200px;;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: white;
+            color: purple;
+            width: 200px;
+            height: 100%;
+            padding: 20px;
+        }
+
+        #token-sentiment{
+            margin-top: 300px;
+
+        }
+
+            /*Add these properties to make the sidebar scrollable*/
+           .side-pane {
+                /* ... (existing styles) */
+                overflow-y: auto; /*Add vertical scrollbar when needed*/
+                max-height: 100%; /*Limit the height of the sidebar to the viewport height*/
+            }
+
+       
+        .side-pane h2 {
+            margin: 0px;
+           
+            padding: 10px 0;
+            cursor: pointer;
+        }
+
+       
+        .token-sentiment {
+            display: flex;
+            gap: 10px;
+            justify-content: space-evenly;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border: 1px solid #ddd;
+            margin-left: 400px;
+            margin-right: 100px;
+            margin-top: 100px;
+        }
+
+        .container {
+            height: 300px;
+            width: 800px;
+            margin-top: 50px;
+            margin-left: 400px;
+            display: flex;
+            gap: 0px; 
+        }
+
+       
+        .container .box1 {
+            flex: 45%; 
+            border: 2px solid green; 
+            padding: 20px;
+        }
+
+       
+        .container .box2 {
+            flex: 10px; 
+            color: grey;
+            padding: 20px;
+        }
+
+        .container .box3{
+            flex: 45%;
+            border: 2px solid red;
+            padding: 20px;
+        }
+
+        #generate-zkp{
+            margin:60px;
+        }
+        #blogs{
+            margin:60px;
+        }
+        #discussion{
+            margin:60px;
+        }
+        #about{
+            margin:60px;
+        }
+
+        .content{
+            margin-left: 300px;
+            margin-top: 300px;
+        }
+        .app-launch-box {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: purple;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            animation: pulse 2s infinite;
+        }
+        .blog-container{
+            display:flex;
+            flex-direction: row;
+            flex:1;
+            gap: 5px;
+            width: 100%;
+            height: 300px;
+            justify-content:space-around;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: purple;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+       
+        
+        @keyframes pulse {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.7;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--Company name-->
+    <div class="name">
+        <h1>ZETRUTO</h1>
+    </div>
+
+
+   
+
+    <div class="side-pane">
+        <h2><a href="#token-sentiment">Token Sentiment</a></h2>
+        <h2><a href="#discussion">Discussion Forum</a></h2>
+        <h2><a href="#generate-zkp">Generate ZKP</a></h2>
+        <h2><a href="#blogs">Blogs</a></h2>
+        <h2><a href="#about">About Us</a></h2>
+    </div>
+    <!-- Content Section - Token Sentiment -->
+    <div class="content">
+        <section id="token-sentiment">
+            <h1>TOKEN SENTIMENT</h1>
+            
+    <div class="container">
+      
+        <div class="box1">
+            <h2>Positive Sentiment</h2>
+        </div>
+
+      
+        <div class="box2">
+        </div>
+        <div class="box3">
+            <h2>Negative Sentiment</h2>
+        </div>
+    </div>
+
+        </section>
+
+       
+
+        <!-- Content Section - Generate ZKP -->
+        <section id="generate-zkp">
+            <h1>GENERATE ZKPs</h1>>
+            <pre>Have something that community should know?.........
+        Need to give proof of something....</pre>
+                <a href="#" class="cta-button">Generate ZKP</a>
+           </section>
+         <!-- Content Section - Blogs -->
+         <section id="blogs">
+            <h1>BLOGS</h1>
+           <div class="blog-container">
+            <div class="blog1">Cryto in new world...</div>
+            <div class="blog2">Know about ZKPs...</div>
+            <div class="blog3">What are tokens?</div>
+
+           </div>
+        </section>
+
+         <!-- Content Section - Discussion Forum -->
+         <section id="discussion">
+            <h1>DISCUSSION FORUM</h1>
+           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus suscipit dolores quia nostrum non minima. Reiciendis quidem molestiae quae. Nam dolorum iste ea corrupti expedita, nobis porro, eligendi recusandae, voluptatum odit delectus fugit sit quibusdam magni est sapiente vero tempore quaerat labore eos distinctio? Quam consequatur facere et? Inventore tempora sed molestiae, quis impedit unde veniam minima dolor sint! Et dolore, autem corrupti ipsa, minima maiores sunt consectetur, aliquam quam nemo architecto facilis animi? Sequi, porro voluptatibus laborum perferendis id fuga illo soluta tempore numquam. Harum dicta quis expedita veniam facilis quidem non reiciendis dignissimos commodi soluta, deserunt voluptates, vero debitis magni, totam dolores voluptas vel animi ab maxime ex possimus optio officia! Adipisci, saepe, tempore velit porro alias sequi ipsa animi asperiores ipsam quibusdam illo soluta distinctio, corrupti odio quam voluptatem natus atque! Quibusdam officia, nam nostrum hic modi aspernatur velit voluptates veniam explicabo quisquam recusandae perferendis saepe dolorum impedit maiores minima exercitationem deserunt nisi vitae officiis? Non eaque numquam odit placeat et doloremque consequuntur dolores maiores obcaecati aliquid quibusdam voluptatibus ipsum maxime quam corrupti suscipit molestiae, asperiores pariatur exercitationem neque velit quod. Commodi itaque corrupti vel minus numquam ratione, molestiae veritatis. Numquam nulla, vero laborum fugit dolorum blanditiis rem. Alias, magnam omnis quidem amet veritatis quia, ipsum assumenda ullam nemo dolorem eum quod libero nesciunt minus blanditiis eveniet voluptate repudiandae voluptatem earum. Vero, qui mollitia! Quisquam unde eos, veniam mollitia sunt laborum, deleniti quae omnis maiores dolorum quibusdam quis voluptas nam neque, itaque quaerat pariatur illum porro. Voluptatum dolor voluptate, et non, assumenda delectus, laboriosam eaque atque qui id commodi! Explicabo sint, porro, repellendus tempora optio perspiciatis adipisci dignissimos magni delectus ullam aperiam esse ducimus, non quidem nobis. Hic tempore sunt enim sint aperiam aliquid aliquam tempora. Consectetur minus, molestias laborum iure maiores inventore? Mollitia natus est unde adipisci, voluptate quam eveniet, corporis repellendus voluptates officiis sunt aut perferendis! Quod in aliquid et neque ullam totam exercitationem iure. Deleniti, sit! Id quod, porro aut ullam consequuntur aperiam illo voluptatibus eos, minima sequi exercitationem iste repellat quibusdam quis assumenda distinctio quaerat voluptate labore sunt, alias adipisci perspiciatis voluptas. Expedita nostrum modi recusandae at nulla suscipit iusto nam doloribus voluptatibus eaque cumque quaerat dolores, qui, deleniti adipisci sint, cum eligendi harum ab nemo ratione quidem dolor rem repudiandae. Hic corporis quos aliquid officia dicta illum expedita consequatur minima neque culpa, ducimus eos repellat, sapiente ut at a. Doloribus tenetur rem autem nisi optio eligendi, explicabo quo reprehenderit delectus quos iusto corrupti fuga cum, fugiat natus expedita reiciendis ipsum, numquam recusandae facilis dolorum maxime. Porro praesentium culpa aspernatur, accusamus reiciendis perferendis quasi repudiandae excepturi quo nihil? Ipsum eum quod vitae alias culpa doloribus obcaecati aliquam consequatur, sunt aliquid explicabo rerum illo debitis tempore laborum quia voluptas! In libero pariatur laboriosam nulla possimus perspiciatis iure? Illum, impedit odit. Nesciunt deserunt officia quidem laboriosam dolorum obcaecati necessitatibus ad eius labore esse iusto deleniti voluptatem beatae est ex, quod sed, aliquid voluptate dolores non quis temporibus inventore? Minima consequatur, rem harum in consequuntur non.
+            orem ipsum dolor sit amet consectetur adipisicing elit. Nemo fugiat reiciendis neque libero quisquam suscipit quo esse officiis ipsa quae, sed, repellat possimus deserunt, ut excepturi velit ad odio quibusdam!</p>
+        </section>
+
+        <!-- Content Section - About Us -->
+        <section id="about">
+            <h1>ABOUT US</h1>
+            <pre>We are a team of enthusiatic entrepreneurs to make a new easy world for crypto traders.
+            Contact us through:
+            </pre>
+            <a id="image" href="linkedin.webp" target="_blank"></a>
+            <a id="image" href="linkedin.webp" target="_blank"></a>
+        </section>
+    </div>
+    <script>
+        // JavaScript for Scrollspy
+        window.addEventListener('DOMContentLoaded', (event) => {
+            let sections = document.querySelectorAll('.content section');
+            let links = document.querySelectorAll('.side-pane h2 a');
+
+            function changeActiveLink() {
+                let fromTop = window.scrollY;
+
+                links.forEach((link, index) => {
+                    let section = sections[index];
+                    let id = section.getAttribute('id');
+
+                    if (section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
+                        links.forEach((link) => {
+                            link.classList.remove('active');
+                        });
+                        document.querySelector(`.side-pane h2 a[href="#${id}"]`).classList.add('active');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', changeActiveLink);
+        });
+    </script>
+
+  
+    <div class="app-launch-box">
+        <p>APP LAUNCHING SOON</p>
+    </div>
+</body>
+</html>
