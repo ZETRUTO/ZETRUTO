@@ -1,4 +1,4 @@
-### Hi there 👋
+## Who are we?
 
 We are ZETRUTO, the one stop place where the air that flows is Crypto! 
 From Discussions to Blogs related to Blockchain & Web3, from News to peer rating of the tokens in the market. 
