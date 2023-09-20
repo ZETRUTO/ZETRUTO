@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZETRUTO - Crypto Trading Insights</title>
+    <style>
+       
+        body, html {
+            margin-left: 2000;
+            padding: 10;
+        }
+        footer{
+            margin-left:500px;
+        }
+        
+       
+        
+        .side-pane {
+            margin-top: 200px;;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: white;
+            color: purple;
+            width: 200px;
+            height: 100%;
+            padding: 20px;
+        }
+       
+        .side-pane h2 {
+            margin: 0px;
+           
+            padding: 10px 0;
+            cursor: pointer;
+        }
+
+       
+       
+
+        .box1{
+            display:flex;
+            flex-direction: column;
+        }
+        .box3{
+            display:flex;
+            flex-direction: column;
+        }
+        .container {
+            height: 300px;
+            width: 800px;
+            margin-top: 70px;
+            margin-left: 150px;
+            display: flex;
+            gap: 0px;
+             
+        }
+
+       
+        .container .box1 {
+            flex: 45%; 
+            border: 2px solid green; 
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+       
+        .container .box2 {
+            flex: 10px; 
+            color: grey;
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        .container .box3{
+            flex: 45%;
+            border: 2px solid red;
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+
+        .image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .foot{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+   
+
+        #generate-zkp{
+            margin:60px;
+        }
+        #blogs{
+            margin:60px;
+        }
+        #discussion{
+            margin:60px;
+        }
+        #about{
+            margin:60px;
+        }
+
+        .content{
+            margin-left: 400px;
+            margin-top: 10px;
+        }
+        .app-launch-box {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: purple;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            animation: pulse 2s infinite;
+        }
+        .blog-container{
+            display:flex;
+            flex-direction: row;
+            flex:1;
+            gap: 20px;
+            width: 100%;
+            height: 300px;
+            justify-content:flex-start;
+        }
+
+        .blog1{
+            border:2px solid black;
+            width: 200px;
+            height: 300px;
+            border-radius: 20px;
+            font-size: 30px;
+            text-align:center;
+        }
+
+        .blog2{
+            border:2px solid black;
+            width: 200px;
+            border-radius: 20px;
+            font-size: 30px;
+            text-align:center;
+        }
+
+        .blog3{
+            border:2px solid black;
+            width: 200px;
+            border-radius: 20px;
+            font-size: 30px;
+            text-align:center;
+            
+        }
+        .full{
+            font-size: 15px;
+        }
+        .login-signup {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .login-button, .signup-button {
+        margin: 0 10px;
+        padding: 10px 20px;
+        border: 4px solid purple;
+        border-radius: 5px;
+        background-color: white;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+        
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: purple;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+        .name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+  position:fixed;
+  
+}
+
+.title {
+  margin-right: 10px;
+  font-size: 100px;
+  color: purple;
+  position: relative;
+}
+
+.tagline {
+  margin-left: 250px;
+  color: purple;
+  position: relative;
+  
+}
+        
+        @keyframes pulse {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.7;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--Company name-->
+    <div class="name">
+        <div class="title">ZETRUTO</div>
+        <div class="tagline"><h3>....making crypto safe</h3></div>
+    </div>
+    <div class="login-signup">
+        <button class="login-button"><a href="site.png.jpg" target="_blank" >Login</a></button>
+        <button class="signup-button"><a href="site.png.jpg" target="_blank" >Sign Up</a></button>
+      </div>
+      
+      
+    
+    <div class="side-pane">
+        <h2><a href="#token-sentiment" text-decoration="none">Token Sentiment</a></h2>
+        <h2><a href="#generate-zkp">Generate ZKP</a></h2>
+        <h2><a href="#blogs">Blogs</a></h2>
+        <h2><a href="#discussion">Discussion Forum</a></h2>
+        <h2><a href="#about">About Us</a></h2>
+    </div>
+    
+    
+    <!-- Content Section - Token Sentiment -->
+    <div class="content">
+        <section id="token-sentiment">
+            
+            
+    <div class="container">
+      
+        <div class="box1">
+            <h2>SAFE TOKENS</h2>
+            <img src="bitcoin.png" width="50px" height="50px">Bitcoin
+            <img src="eth.png" width="50px" height="50px">Ethereum
+            <img src="usdc.png" width="50px" height="50px">USDC
+        </div>
+
+      
+        <div class="box2">
+        </div>
+        <div class="box3">
+            <h2>UNSAFE TOKENS</h2>
+            <img src="t.png" width="50px" height="50px"/>Tera
+            <img src="l.png" width="50px" height="50px"/>Luna
+        </div>
+    </div>
+
+        </section>
+
+       
+
+        <!-- Content Section - Generate ZKP -->
+        <section id="generate-zkp">
+            <h1>GENERATE ZKPs</h1>
+            <pre>Have something that community should know?.........
+        Need to give proof of something....</pre>
+                <a href="site.png.jpg" target="_blank" class="cta-button">Generate ZKP</a>
+           </section>
+         <!-- Content Section - Blogs -->
+         <section id="blogs">
+            <h1>BLOGS</h1>
+           <div class="blog-container">
+            <div class="blog1">Cryto in new world...
+                <div class="full"><a href="site.png.jpg" target="_blank" >Read full article here</a></div>
+            </div>
+            <div class="blog2">Know about ZKPs...
+                <div class="full"><a href="site.png.jpg" target="_blank">Read full article here</a></div>
+            </div>
+            <div class="blog3">What are tokens?
+                <div class="full"><a href="site.png.jpg" target="_blank">Read full article here</a></div>
+            </div>
+
+           </div>
+        </section>
+
+         <!-- Content Section - Discussion Forum -->
+         <section id="discussion">
+            <h1>DISCUSSION FORUM</h1>
+            <div class="coming-soon" font-size="128px">COMING SOON...</div>
+         </section>
+
+        <!-- Content Section - About Us -->
+        <section id="about">
+            <h1>ABOUT US</h1>
+            <pre font-size="32px"> We are a team of crypto enthusiasts currently enrolled in the second year at IIT Roorkee aiming to simplify crypto trading for newbies<br> and making crypto investment as safe it can be!
+            </pre>
+            <h4>Contact us:</h4>
+            <a href="https://www.linkedin.com/in/payal-kanyan-184823251/">
+                <img src="linkedin.webp" alt="LinkedIn" height="30px" width="30px" />
+              </a>
+              <a href="">
+                <a href="mailto:zetruto@gmail.com"><img src="gmail.png" alt="Gmail" height="30px" width="30px" />
+              </a>
+        </section>
+    </div>
+    <script>
+        // JavaScript for Scrollspy
+        window.addEventListener('DOMContentLoaded', (event) => {
+            let sections = document.querySelectorAll('.content section');
+            let links = document.querySelectorAll('.side-pane h2 a');
+
+            function changeActiveLink() {
+                let fromTop = window.scrollY;
+
+                links.forEach((link, index) => {
+                    let section = sections[index];
+                    let id = section.getAttribute('id');
+
+                    if (section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
+                        links.forEach((link) => {
+                            link.classList.remove('active');
+                        });
+                        document.querySelector(`.side-pane h2 a[href="#${id}"]`).classList.add('active');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', changeActiveLink);
+        });
+    </script>
+
+  
+    <div class="app-launch-box">
+        <p>APP LAUNCHING SOON</p>
+    </div>
+
+   
+</body>
+<footer>
+    <div>
+    <div style="font-size: 40px; color: red;">We are under maintenance!</div> 
+    </div>
+  </footer>
+  
+ 
+</html>
